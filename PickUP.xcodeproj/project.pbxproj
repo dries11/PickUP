@@ -14,6 +14,7 @@
 		B35359AE1E526532001A9397 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35359AC1E526532001A9397 /* LaunchScreen.storyboard */; };
 		B35359B91E526533001A9397 /* PickUPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35359B81E526533001A9397 /* PickUPTests.swift */; };
 		B35359C41E526533001A9397 /* PickUPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35359C31E526533001A9397 /* PickUPUITests.swift */; };
+		B35359D31E5268A2001A9397 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35359D21E5268A2001A9397 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B35359BF1E526533001A9397 /* PickUPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickUPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35359C31E526533001A9397 /* PickUPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUPUITests.swift; sourceTree = "<group>"; };
 		B35359C51E526533001A9397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B35359D21E5268A2001A9397 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B35359D31E5268A2001A9397 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				B35359B71E526533001A9397 /* PickUPTests */,
 				B35359C21E526533001A9397 /* PickUPUITests */,
 				B35359A11E526532001A9397 /* Products */,
+				B35359D11E5268A2001A9397 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				B35359C51E526533001A9397 /* Info.plist */,
 			);
 			path = PickUPUITests;
+			sourceTree = "<group>";
+		};
+		B35359D11E5268A2001A9397 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B35359D21E5268A2001A9397 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +207,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = VDQ545AEPY;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					B35359B31E526533001A9397 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -512,6 +529,7 @@
 				B35359CA1E526533001A9397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B35359CB1E526533001A9397 /* Build configuration list for PBXNativeTarget "PickUPTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +538,7 @@
 				B35359CD1E526533001A9397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B35359CE1E526533001A9397 /* Build configuration list for PBXNativeTarget "PickUPUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +547,7 @@
 				B35359D01E526533001A9397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
