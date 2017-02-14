@@ -1,14 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickUP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +22,109 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" backIndicatorImage="&lt;" translatesAutoresizingMaskIntoConstraints="NO" id="Fka-Nf-6uK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="PickUP" id="pan-Ib-52r">
+                                        <barButtonItem key="backBarButtonItem" title="Settings" id="ZrN-4G-yy2"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtW-Tl-oa6">
+                                <rect key="frame" x="67" y="127" width="240" height="34"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="gRM-Ww-E9R"/>
+                                    <constraint firstAttribute="width" constant="240" id="il7-9L-dHY"/>
+                                </constraints>
+                                <state key="normal" title="+ Create A New PickUP!"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lDk-W3-fxc">
+                                <rect key="frame" x="0.0" y="169" width="375" height="225"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="iy4-l7-l6H" kind="embed" id="zz0-G1-XSC"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kol-Ub-D8k">
+                                <rect key="frame" x="0.0" y="402" width="375" height="257"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="vD0-G8-XBM" kind="embed" id="Yrq-Ec-wiO"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CtW-Tl-oa6" firstAttribute="top" secondItem="Fka-Nf-6uK" secondAttribute="bottom" constant="63" id="3Is-SQ-yjy"/>
+                            <constraint firstItem="CtW-Tl-oa6" firstAttribute="top" secondItem="Fka-Nf-6uK" secondAttribute="bottom" constant="63" id="9zZ-cA-pvo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CtW-Tl-oa6" secondAttribute="trailing" constant="52" id="Ksf-PS-hFT"/>
+                            <constraint firstItem="CtW-Tl-oa6" firstAttribute="width" secondItem="Fka-Nf-6uK" secondAttribute="height" multiplier="60:11" id="NOt-sc-bxJ"/>
+                            <constraint firstItem="CtW-Tl-oa6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="SNH-MF-7bM"/>
+                            <constraint firstItem="Fka-Nf-6uK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SUK-Ec-hgc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CtW-Tl-oa6" secondAttribute="trailing" constant="52" id="Tmm-nB-rhp"/>
+                            <constraint firstAttribute="trailing" secondItem="Fka-Nf-6uK" secondAttribute="trailing" id="WGk-r0-ehX"/>
+                            <constraint firstItem="CtW-Tl-oa6" firstAttribute="centerX" secondItem="Fka-Nf-6uK" secondAttribute="centerX" id="lIA-Xb-guY"/>
+                            <constraint firstItem="CtW-Tl-oa6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="lsu-1c-Oyc"/>
+                            <constraint firstItem="CtW-Tl-oa6" firstAttribute="top" secondItem="Fka-Nf-6uK" secondAttribute="bottom" constant="63" id="ph5-vP-62g"/>
+                            <constraint firstItem="Fka-Nf-6uK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="yxo-EG-YXq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="createNewPickUPBtn" destination="CtW-Tl-oa6" id="f0Z-Hr-iFf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BdD-ZK-3hu">
+            <objects>
+                <viewController id="iy4-l7-l6H" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="20t-XE-CtU"/>
+                        <viewControllerLayoutGuide type="bottom" id="5w8-u5-qEb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6uS-6f-93g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zb-XU-igY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="-410"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cXu-Vn-pzr">
+            <objects>
+                <viewController id="vD0-G8-XBM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MlC-He-riJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="NJE-0n-liV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4lE-qt-ore">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="257"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zpb-fN-g3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="358"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="&lt;" width="16" height="16"/>
+    </resources>
 </document>
