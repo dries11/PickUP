@@ -12,6 +12,24 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="aGn-pj-mn9">
+            <objects>
+                <viewController id="ATD-gt-Gp1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o7T-fD-ied"/>
+                        <viewControllerLayoutGuide type="bottom" id="cio-1o-Zmr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w9Q-3M-tC9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I6r-hG-geC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1030" y="36"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickUP" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,6 +48,14 @@
                                 <items>
                                     <navigationItem title="PickUP" id="pan-Ib-52r">
                                         <barButtonItem key="backBarButtonItem" title="Settings" id="ZrN-4G-yy2"/>
+                                        <barButtonItem key="leftBarButtonItem" image="settings" id="33S-Z5-sru">
+                                            <connections>
+                                                <action selector="settingsBtnPressed:" destination="BYZ-38-t0r" id="03R-Zv-EuW"/>
+                                                <segue destination="ATD-gt-Gp1" kind="popoverPresentation" popoverAnchorBarButtonItem="33S-Z5-sru" id="12I-9q-cYE">
+                                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                                </segue>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -46,21 +72,20 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createNewPickUpBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nKZ-of-oI4"/>
+                                </connections>
                             </button>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lDk-W3-fxc">
-                                <rect key="frame" x="0.0" y="169" width="375" height="225"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="iy4-l7-l6H" kind="embed" id="zz0-G1-XSC"/>
-                                </connections>
-                            </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kol-Ub-D8k">
-                                <rect key="frame" x="0.0" y="402" width="375" height="257"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="vD0-G8-XBM" kind="embed" id="Yrq-Ec-wiO"/>
-                                </connections>
-                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zk0-p2-CIT">
+                                <rect key="frame" x="9" y="259" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Defender"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCN-95-Cyb">
+                                <rect key="frame" x="224" y="266" width="135" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
@@ -81,50 +106,17 @@
                     </view>
                     <connections>
                         <outlet property="createNewPickUPBtn" destination="CtW-Tl-oa6" id="f0Z-Hr-iFf"/>
+                        <outlet property="settingsBtn" destination="33S-Z5-sru" id="Jv5-l7-Afc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="BdD-ZK-3hu">
-            <objects>
-                <viewController id="iy4-l7-l6H" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="20t-XE-CtU"/>
-                        <viewControllerLayoutGuide type="bottom" id="5w8-u5-qEb"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6uS-6f-93g">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4zb-XU-igY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="948" y="-410"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="cXu-Vn-pzr">
-            <objects>
-                <viewController id="vD0-G8-XBM" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MlC-He-riJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="NJE-0n-liV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4lE-qt-ore">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="257"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zpb-fN-g3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="948" y="358"/>
-        </scene>
     </scenes>
     <resources>
         <image name="&lt;" width="16" height="16"/>
+        <image name="Defender" width="150" height="150"/>
+        <image name="settings" width="15" height="15"/>
     </resources>
 </document>

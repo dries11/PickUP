@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "basketball-wallpaper-1280x768-1180x768.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "RightCrossover.png",
       "scale" : "2x"
     },
     {
