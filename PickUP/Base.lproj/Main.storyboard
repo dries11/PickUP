@@ -16,33 +16,6 @@
     </customFonts>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="WVM-5y-j4w">
-            <objects>
-                <viewController id="4dv-TF-5SP" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2GB-x5-7F1"/>
-                        <viewControllerLayoutGuide type="bottom" id="4I9-0h-n4P"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="t6N-g9-S1e">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2xJ-di-7w3">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Just an Extra" id="3U2-nA-q9t"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="faG-Vt-4RL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1271" y="-269"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="17n-7B-sqL">
             <objects>
                 <viewController id="Zr8-7j-eMH" sceneMemberID="viewController">
@@ -58,7 +31,14 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Search View" id="9I0-vC-Zlm"/>
+                                    <navigationItem title="Search View" id="9I0-vC-Zlm">
+                                        <barButtonItem key="leftBarButtonItem" image="back_btn" id="gWt-0Y-eYW">
+                                            <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="bjr-mY-6TF"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -117,6 +97,9 @@
                                         <real key="value" value="22"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Zr8-7j-eMH" kind="show" id="vta-fL-VMg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8u-Px-VT2" customClass="SportIconButton" customModule="PickUP" customModuleProvider="target">
                                 <rect key="frame" x="209" y="258" width="150" height="150"/>
@@ -132,6 +115,9 @@
                                         <real key="value" value="22"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Zr8-7j-eMH" kind="show" id="gX5-Py-cfX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yg0-yR-gsV" customClass="SportIconButton" customModule="PickUP" customModuleProvider="target">
                                 <rect key="frame" x="62" y="137" width="250" height="30"/>
@@ -142,12 +128,18 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="0.0"/>
+                                        <real key="value" value="3"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="bKr-ec-Fla" kind="show" id="cs3-Mh-ojM"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PickUP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAn-Xu-eA4">
                                 <rect key="frame" x="87" y="20" width="200" height="44"/>
@@ -186,33 +178,6 @@
             <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="6xa-re-WCA">
-            <objects>
-                <viewController id="8GI-8L-yra" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cVT-gp-u5p"/>
-                        <viewControllerLayoutGuide type="bottom" id="R1d-GN-1dK"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6HV-na-G63">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eGb-qX-lGe">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Admin View" id="24j-q5-ksD"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LoF-oX-UKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1436" y="-269"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="7ie-Gq-Wqg">
             <objects>
                 <viewController id="bKr-ec-Fla" sceneMemberID="viewController">
@@ -228,7 +193,17 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Create A New PickUP!" id="Qlz-dO-ed8"/>
+                                    <navigationItem title="Create A New PickUP!" id="Qlz-dO-ed8">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="hPo-vW-7Na">
+                                            <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="1Yb-b0-X5C"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="UXg-Tu-2l1">
+                                            <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -238,33 +213,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bhs-A5-I0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="41" y="1127"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="dyf-bi-0jw">
-            <objects>
-                <viewController id="cjT-KV-mqd" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RG8-kM-FFL"/>
-                        <viewControllerLayoutGuide type="bottom" id="1xa-mp-lf0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="7ec-qV-ksR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bnI-TQ-nz9">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Player View" id="k0z-y9-xqt"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZHx-Ie-f30" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1436" y="666"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uXN-6H-b3A">
@@ -284,6 +232,7 @@
                                 <items>
                                     <navigationItem title="Settings" id="J8d-9F-NQP">
                                         <barButtonItem key="leftBarButtonItem" image="back_btn" id="CZR-sR-Qzq">
+                                            <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="cd0-Zs-qKY"/>
                                             </connections>
@@ -308,4 +257,8 @@
         <image name="profile" width="15" height="15"/>
         <image name="settings" width="15" height="15"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bjr-mY-6TF"/>
+        <segue reference="vta-fL-VMg"/>
+    </inferredMetricsTieBreakers>
 </document>
