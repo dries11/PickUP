@@ -14,7 +14,6 @@
 		B35359AE1E526532001A9397 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35359AC1E526532001A9397 /* LaunchScreen.storyboard */; };
 		B35359B91E526533001A9397 /* PickUPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35359B81E526533001A9397 /* PickUPTests.swift */; };
 		B35359C41E526533001A9397 /* PickUPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35359C31E526533001A9397 /* PickUPUITests.swift */; };
-		B3863ED21E54D16000B73E00 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3863ED11E54D16000B73E00 /* FBSDKLoginKit.framework */; };
 		B3B1CAA71E54325B00BB974D /* SLANT.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B3B1CAA61E54325300BB974D /* SLANT.TTF */; };
 		B3B1CAA91E54345500BB974D /* SportIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1CAA81E54345500BB974D /* SportIconButton.swift */; };
 /* End PBXBuildFile section */
@@ -50,7 +49,6 @@
 		B35359BF1E526533001A9397 /* PickUPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickUPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35359C31E526533001A9397 /* PickUPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUPUITests.swift; sourceTree = "<group>"; };
 		B35359C51E526533001A9397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3863ED11E54D16000B73E00 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../Documents/FacebookSDKs-iOS-4.19.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		B3B1CAA61E54325300BB974D /* SLANT.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = SLANT.TTF; path = ../../../../Downloads/SLANT.TTF; sourceTree = "<group>"; };
 		B3B1CAA81E54345500BB974D /* SportIconButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportIconButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3863ED21E54D16000B73E00 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +135,6 @@
 		B35359D11E5268A2001A9397 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B3863ED11E54D16000B73E00 /* FBSDKLoginKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -448,7 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VDQ545AEPY;
-				FRAMEWORK_SEARCH_PATHS = "~/Documents/FacebookSDK";
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = PickUP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.PickUP;
@@ -462,7 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VDQ545AEPY;
-				FRAMEWORK_SEARCH_PATHS = "~/Documents/FacebookSDK";
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = PickUP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.PickUP;
