@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13603B521E60CA7000D29C41 /* SLANT.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 13603B511E60CA7000D29C41 /* SLANT.TTF */; };
 		B35359A41E526532001A9397 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35359A31E526532001A9397 /* AppDelegate.swift */; };
 		B35359A61E526532001A9397 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35359A51E526532001A9397 /* ViewController.swift */; };
 		B35359A91E526532001A9397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35359A71E526532001A9397 /* Main.storyboard */; };
@@ -14,7 +15,6 @@
 		B35359AE1E526532001A9397 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35359AC1E526532001A9397 /* LaunchScreen.storyboard */; };
 		B35359B91E526533001A9397 /* PickUPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35359B81E526533001A9397 /* PickUPTests.swift */; };
 		B35359C41E526533001A9397 /* PickUPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35359C31E526533001A9397 /* PickUPUITests.swift */; };
-		B3B1CAA71E54325B00BB974D /* SLANT.TTF in Resources */ = {isa = PBXBuildFile; fileRef = B3B1CAA61E54325300BB974D /* SLANT.TTF */; };
 		B3B1CAA91E54345500BB974D /* SportIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B1CAA81E54345500BB974D /* SportIconButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13603B511E60CA7000D29C41 /* SLANT.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = SLANT.TTF; path = ../SLANT.TTF; sourceTree = "<group>"; };
 		B35359A01E526532001A9397 /* PickUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickUP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35359A31E526532001A9397 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B35359A51E526532001A9397 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		B35359BF1E526533001A9397 /* PickUPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickUPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35359C31E526533001A9397 /* PickUPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUPUITests.swift; sourceTree = "<group>"; };
 		B35359C51E526533001A9397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3B1CAA61E54325300BB974D /* SLANT.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = SLANT.TTF; path = ../../../../Downloads/SLANT.TTF; sourceTree = "<group>"; };
 		B3B1CAA81E54345500BB974D /* SportIconButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SportIconButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,7 +81,6 @@
 		B35359971E526532001A9397 = {
 			isa = PBXGroup;
 			children = (
-				B3B1CAA51E54323F00BB974D /* Fonts */,
 				B35359A21E526532001A9397 /* PickUP */,
 				B35359B71E526533001A9397 /* PickUPTests */,
 				B35359C21E526533001A9397 /* PickUPUITests */,
@@ -135,17 +134,9 @@
 		B35359D11E5268A2001A9397 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				13603B511E60CA7000D29C41 /* SLANT.TTF */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B3B1CAA51E54323F00BB974D /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				B3B1CAA61E54325300BB974D /* SLANT.TTF */,
-			);
-			name = Fonts;
-			path = PickUPUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +207,6 @@
 				TargetAttributes = {
 					B353599F1E526532001A9397 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = VDQ545AEPY;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -263,10 +253,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3B1CAA71E54325B00BB974D /* SLANT.TTF in Resources */,
 				B35359AE1E526532001A9397 /* LaunchScreen.storyboard in Resources */,
 				B35359AB1E526532001A9397 /* Assets.xcassets in Resources */,
 				B35359A91E526532001A9397 /* Main.storyboard in Resources */,
+				13603B521E60CA7000D29C41 /* SLANT.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,11 +433,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VDQ545AEPY;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = PickUP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.PickUP;
+				PRODUCT_BUNDLE_IDENTIFIER = ries.ibikunle.PickUP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -457,11 +447,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = VDQ545AEPY;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = PickUP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ries.dan.PickUP;
+				PRODUCT_BUNDLE_IDENTIFIER = ries.ibikunle.PickUP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
